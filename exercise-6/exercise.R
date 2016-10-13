@@ -35,3 +35,25 @@
 # a sentence with how popular that name was in that year
 
 # How popular was the name 'Laura' in 1995
+
+female.names<-read.csv("c:/users/Other/Documents/GitHub/m8-dataframes/exercise-6/data/female_names.csv",stringsAsFactors = FALSE)
+
+year<-as.vector(female.names$year)
+
+name<-as.vector(female.names$name)
+
+prop<-as.vector(female.names$prop)
+
+name.2013<-name[year==2013]
+
+prop.2013<-prop[year==2013]
+
+popular<-name.2013[prop.2013==max(prop.2013)]
+
+MostPopular<-function(a) {
+  
+  print("The most popular name in" a "was"
+  
+  return( name[year==a][prop[year==a]==max(prop[year==a])])}
+
+howpop<-function(a,b){}

@@ -13,13 +13,13 @@
 # Create a new variable by passing the USPersonalExpenditure to the data.frame function
 
 
-# What are the column names of your dataframe?
+# What are the column names of your dataframe? x1940,x1945,x1950,x1955,x1960
 
 
-# Why are they so strange?
+# Why are they so strange? They have x before a number
 
 
-# What are the row names of your dataframe?
+# What are the row names of your dataframe? Food and Toabacco, Householde Operation, Medical and Health, Personal Care, Private education
 
 
 # Create a column `category` that is equal to your rownames
@@ -44,3 +44,11 @@
 
 # Write a loop to cycle through the years, and store the highest spending category of
 # each year in a list
+
+data("USPersonalExpenditure")
+
+USPersonalExpenditure<-data.frame(USPersonalExpenditure)
+
+USPersonalExpenditure$category<-c(rownames(USPersonalExpenditure))
+
+sum(USPersonalExpenditure[4,])

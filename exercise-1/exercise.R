@@ -24,3 +24,14 @@
 
 
 # Add pizza to every meal!
+
+Breakfast <-c("Bannana Bread", "Water","Noodles")
+
+Lunch<-c("Nothing")
+
+Food<-list(Breakfast=Breakfast,Lunch=Lunch )
+
+Food$Dinner<-c('No Idea','Sprite')
+
+Dinner<-Food[['Dinner']]
+

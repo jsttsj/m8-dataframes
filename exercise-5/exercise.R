@@ -34,3 +34,27 @@
 
 
 # How many grants were awarded in 2010?
+
+grants<- read.csv("data/gates_money.csv", stringsAsFactors = FALSE)
+
+View(grants)
+
+spending<- as.vector(grants$total_amount)
+ 
+is.vector(spending)
+
+org<- as.vector(grants$organization)
+
+meangrantvalue<-mean(spending)
+
+largegrantvalue<- max(spending)
+
+smallgrantvalue<- min(spending)
+
+grants$organization[grants$total_amount == largegrantvalue]
+
+grants$organization[grants$total_amount == smallgrantvalue]
+
+sum (grants$start_year == 2010)
+
+

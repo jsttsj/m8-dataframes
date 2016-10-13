@@ -54,3 +54,25 @@
 # Repeat the above experiment 100 times, tracking the loss each time.
 # Does the average loss equal what you expect?
 # What about 10,000 times?
+
+number<-c(1:100)
+
+Employees<-paste("Employee",number)
+
+Saleries2014<-runif(100,100000,300000)
+
+Saleries2015<-runif(100,200000,400000)
+
+Saleries<-data.frame(Saleries2014,Saleries2015)
+
+Raise<-Saleries2015-Saleries2014
+
+Saleries$Raise
+
+Saleries$GotRaise<- Raise>0
+
+Saleries [57,2]
+
+
+
+max(Saleries)

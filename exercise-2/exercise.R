@@ -20,3 +20,16 @@
 
 # Assign your dataframe rownames of their opponents
 
+gscore <- c(12,3,37,27)
+
+bscore <- c(10,9,18,17)
+
+score<-data.frame(gscore,bscore)
+
+score$diff<-gscore-bscore
+  
+score$won<-diff>0
+  
+opponents<-c("Dolphins","Rams","49ers","Jets")
+
+rownames(score)<-opponents

@@ -32,4 +32,10 @@ passing.yards<- as.vector(husky.games.2015[,5])
 
 combined.yards<- rushing.yards+passing.yards
 
-MostYardScore
+husky.games.2015$combined.yards<-combined.yards
+
+husky.games.2015[,max]
+
+MostYardsScore <-function (games){
+  return(paste())
+}
